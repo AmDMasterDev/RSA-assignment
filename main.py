@@ -67,13 +67,13 @@ def gcd(x: int, y: int):
 
 
 def prime_num():
-    a = random.randint(10, 100)
+    num = random.randint(10, 100)
 
-    for i in range(2, a):
-        if (a % i) == 0:
-            a = prime_num()
+    for i in range(2, num):
+        if (num % i) == 0:
+            num = prime_num()
             break
-    return a
+    return num
 
 
 # main
